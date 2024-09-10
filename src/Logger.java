@@ -20,7 +20,7 @@ public class Logger {
 
     private void initializeWriter() {
         try {
-            writer = new PrintWriter(new FileWriter(logFileName, true)); // true for appending to the file
+            writer = new PrintWriter(new FileWriter(logFileName, true));
         } catch (IOException e) {
             System.out.println("Error initializing the log file: " + e.getMessage());
         }
